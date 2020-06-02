@@ -310,6 +310,7 @@ function _fetchTilemap (evt) {
             // if necessary, resample a lower zoom
             this.options.maxNativeZoom = newZoom - 1;
             this.options.downsampled = true;
+            map._resetView(map.getCenter(), map.getZoom(), true)
             break;
           }
           // if no tiles are missing, reset the original maxZoom
