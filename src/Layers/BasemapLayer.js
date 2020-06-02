@@ -310,7 +310,6 @@ function _fetchTilemap (evt) {
             // if necessary, resample a lower zoom
             this.options.maxNativeZoom = newZoom - 1;
             this.options.downsampled = true;
-            debugger;
             map._resetView(map.getCenter(), map.getZoom(), true)
             break;
           }
